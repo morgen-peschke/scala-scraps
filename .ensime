@@ -1,0 +1,101 @@
+(
+ :root-dir "/Volumes/Source/development/learning"
+ :cache-dir "/Volumes/Source/development/learning/.ensime_cache"
+ :name "learning"
+ :java-home "/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home"
+ :java-flags ("-Xms8192m" "-Xmx8192m" "-XX:ReservedCodeCacheSize=512m" "-XX:MaxMetaspaceSize=1024m")
+ :reference-source-roots ("/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/src.zip")
+ :scala-version "2.10.4"
+ :compiler-args ("-unchecked" "-deprecation" "-feature")
+ 
+ :subprojects ((
+   :name "algorithms"
+   :module-name "algorithms"
+   :source-roots ("/Volumes/Source/development/learning/algorithms/src/main/scala" "/Volumes/Source/development/learning/algorithms/src/main/java" "/Volumes/Source/development/learning/algorithms/src/test/scala")
+   :target "/Volumes/Source/development/learning/algorithms/target/scala-2.10/classes"
+   :test-targets ("/Volumes/Source/development/learning/algorithms/target/scala-2.10/test-classes")
+   :depends-on-modules ("layout")
+   :compile-deps nil
+   :runtime-deps nil
+   :test-deps nil
+   :doc-jars ("/Volumes/Source/development/learning/algorithms/target/scala-2.10/algorithms_2.10-0.1-javadoc.jar")
+   :reference-source-roots nil) (
+   :name "root"
+   :module-name "root"
+   :source-roots nil
+   :target "/Volumes/Source/development/learning/target/scala-2.10/classes"
+   :test-targets ("/Volumes/Source/development/learning/target/scala-2.10/test-classes")
+   :depends-on-modules nil
+   :compile-deps ("/Users/morgen/.sbt/boot/scala-2.10.4/lib/scala-library.jar")
+   :runtime-deps nil
+   :test-deps ("/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/jars/scalamock-core_2.10-3.2.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/bundles/scalatest_2.10-2.2.2.jar" "/Users/morgen/.sbt/boot/scala-2.10.4/lib/scala-reflect.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/jars/scalacheck_2.10-1.12.5.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/jars/scalamock-scalatest-support_2.10-3.2.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.5.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar")
+   :doc-jars ("/Users/morgen/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.10.4-javadoc.jar" "/Volumes/Source/development/learning/target/scala-2.10/root_2.10-0.1-SNAPSHOT-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/docs/scalacheck_2.10-1.12.5-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/docs/scalamock-core_2.10-3.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/docs/scalamock-scalatest-support_2.10-3.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.10.5-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/docs/scalatest_2.10-2.2.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/docs/test-interface-1.0-javadoc.jar")
+   :reference-source-roots ("/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/srcs/scalamock-core_2.10-3.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/srcs/scalatest_2.10-2.2.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.5-sources.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/srcs/scalamock-scalatest-support_2.10-3.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.10.4-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/srcs/test-interface-1.0-sources.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/srcs/scalacheck_2.10-1.12.5-sources.jar")) (
+   :name "monads"
+   :module-name "monads"
+   :source-roots ("/Volumes/Source/development/learning/monads/src/main/scala" "/Volumes/Source/development/learning/monads/src/test/scala")
+   :target "/Volumes/Source/development/learning/monads/target/scala-2.10/classes"
+   :test-targets ("/Volumes/Source/development/learning/monads/target/scala-2.10/test-classes")
+   :depends-on-modules nil
+   :compile-deps ("/Users/morgen/.sbt/boot/scala-2.10.4/lib/scala-library.jar")
+   :runtime-deps nil
+   :test-deps ("/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/jars/scalamock-core_2.10-3.2.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/bundles/scalatest_2.10-2.2.2.jar" "/Users/morgen/.sbt/boot/scala-2.10.4/lib/scala-reflect.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/jars/scalacheck_2.10-1.12.5.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/jars/scalamock-scalatest-support_2.10-3.2.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.5.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar")
+   :doc-jars ("/Users/morgen/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.10.4-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/docs/scalacheck_2.10-1.12.5-javadoc.jar" "/Volumes/Source/development/learning/monads/target/scala-2.10/monads_2.10-0.1-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/docs/scalamock-core_2.10-3.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/docs/scalamock-scalatest-support_2.10-3.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.10.5-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/docs/scalatest_2.10-2.2.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/docs/test-interface-1.0-javadoc.jar")
+   :reference-source-roots ("/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/srcs/scalamock-core_2.10-3.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/srcs/scalatest_2.10-2.2.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.5-sources.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/srcs/scalamock-scalatest-support_2.10-3.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.10.4-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/srcs/test-interface-1.0-sources.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/srcs/scalacheck_2.10-1.12.5-sources.jar")) (
+   :name "expressions"
+   :module-name "expressions"
+   :source-roots ("/Volumes/Source/development/learning/expressions/src/main/scala" "/Volumes/Source/development/learning/expressions/src/test/scala")
+   :target "/Volumes/Source/development/learning/expressions/target/scala-2.10/classes"
+   :test-targets ("/Volumes/Source/development/learning/expressions/target/scala-2.10/test-classes")
+   :depends-on-modules ("layout")
+   :compile-deps nil
+   :runtime-deps nil
+   :test-deps nil
+   :doc-jars ("/Volumes/Source/development/learning/expressions/target/scala-2.10/expressions_2.10-0.1-javadoc.jar")
+   :reference-source-roots nil) (
+   :name "codeReview"
+   :module-name "codeReview"
+   :source-roots ("/Volumes/Source/development/learning/codeReview/src/main/scala" "/Volumes/Source/development/learning/codeReview/src/test/scala")
+   :target "/Volumes/Source/development/learning/codeReview/target/scala-2.10/classes"
+   :test-targets ("/Volumes/Source/development/learning/codeReview/target/scala-2.10/test-classes")
+   :depends-on-modules nil
+   :compile-deps ("/Users/morgen/.sbt/boot/scala-2.10.4/lib/scala-library.jar")
+   :runtime-deps nil
+   :test-deps ("/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/jars/scalamock-core_2.10-3.2.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/bundles/scalatest_2.10-2.2.2.jar" "/Users/morgen/.sbt/boot/scala-2.10.4/lib/scala-reflect.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/jars/scalacheck_2.10-1.12.5.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/jars/scalamock-scalatest-support_2.10-3.2.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.5.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar")
+   :doc-jars ("/Users/morgen/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.10.4-javadoc.jar" "/Volumes/Source/development/learning/codeReview/target/scala-2.10/codereview_2.10-0.1-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/docs/scalacheck_2.10-1.12.5-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/docs/scalamock-core_2.10-3.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/docs/scalamock-scalatest-support_2.10-3.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.10.5-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/docs/scalatest_2.10-2.2.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/docs/test-interface-1.0-javadoc.jar")
+   :reference-source-roots ("/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/srcs/scalamock-core_2.10-3.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/srcs/scalatest_2.10-2.2.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.5-sources.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/srcs/scalamock-scalatest-support_2.10-3.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.10.4-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/srcs/test-interface-1.0-sources.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/srcs/scalacheck_2.10-1.12.5-sources.jar")) (
+   :name "math"
+   :module-name "math"
+   :source-roots ("/Volumes/Source/development/learning/math/src/main/scala" "/Volumes/Source/development/learning/math/src/test/scala")
+   :target "/Volumes/Source/development/learning/math/target/scala-2.10/classes"
+   :test-targets ("/Volumes/Source/development/learning/math/target/scala-2.10/test-classes")
+   :depends-on-modules nil
+   :compile-deps ("/Users/morgen/.sbt/boot/scala-2.10.4/lib/scala-library.jar")
+   :runtime-deps nil
+   :test-deps ("/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/jars/scalamock-core_2.10-3.2.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/bundles/scalatest_2.10-2.2.2.jar" "/Users/morgen/.sbt/boot/scala-2.10.4/lib/scala-reflect.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/jars/scalacheck_2.10-1.12.5.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/jars/scalamock-scalatest-support_2.10-3.2.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.5.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar")
+   :doc-jars ("/Users/morgen/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.10.4-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/docs/scalacheck_2.10-1.12.5-javadoc.jar" "/Volumes/Source/development/learning/math/target/scala-2.10/math_2.10-0.1-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/docs/scalamock-core_2.10-3.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/docs/scalamock-scalatest-support_2.10-3.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.10.5-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/docs/scalatest_2.10-2.2.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/docs/test-interface-1.0-javadoc.jar")
+   :reference-source-roots ("/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/srcs/scalamock-core_2.10-3.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/srcs/scalatest_2.10-2.2.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.5-sources.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/srcs/scalamock-scalatest-support_2.10-3.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.10.4-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/srcs/test-interface-1.0-sources.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/srcs/scalacheck_2.10-1.12.5-sources.jar")) (
+   :name "layout"
+   :module-name "layout"
+   :source-roots ("/Volumes/Source/development/learning/layout/src/main/scala" "/Volumes/Source/development/learning/layout/src/test/scala")
+   :target "/Volumes/Source/development/learning/layout/target/scala-2.10/classes"
+   :test-targets ("/Volumes/Source/development/learning/layout/target/scala-2.10/test-classes")
+   :depends-on-modules nil
+   :compile-deps ("/Users/morgen/.sbt/boot/scala-2.10.4/lib/scala-library.jar")
+   :runtime-deps nil
+   :test-deps ("/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/jars/scalamock-core_2.10-3.2.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/bundles/scalatest_2.10-2.2.2.jar" "/Users/morgen/.sbt/boot/scala-2.10.4/lib/scala-reflect.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/jars/scalacheck_2.10-1.12.5.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/jars/scalamock-scalatest-support_2.10-3.2.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.5.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar")
+   :doc-jars ("/Users/morgen/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.10.4-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/docs/scalacheck_2.10-1.12.5-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/docs/scalamock-core_2.10-3.2-javadoc.jar" "/Volumes/Source/development/learning/layout/target/scala-2.10/layout_2.10-0.1-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/docs/scalamock-scalatest-support_2.10-3.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.10.5-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/docs/scalatest_2.10-2.2.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/docs/test-interface-1.0-javadoc.jar")
+   :reference-source-roots ("/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/srcs/scalamock-core_2.10-3.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/srcs/scalatest_2.10-2.2.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.5-sources.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/srcs/scalamock-scalatest-support_2.10-3.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.10.4-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/srcs/test-interface-1.0-sources.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/srcs/scalacheck_2.10-1.12.5-sources.jar")) (
+   :name "graphics"
+   :module-name "graphics"
+   :source-roots ("/Volumes/Source/development/learning/graphics/src/main/scala" "/Volumes/Source/development/learning/graphics/src/test/scala")
+   :target "/Volumes/Source/development/learning/graphics/target/scala-2.10/classes"
+   :test-targets ("/Volumes/Source/development/learning/graphics/target/scala-2.10/test-classes")
+   :depends-on-modules nil
+   :compile-deps ("/Users/morgen/.sbt/boot/scala-2.10.4/lib/scala-library.jar" "/Users/morgen/.ivy2/cache/org.scalafx/scalafx_2.10/jars/scalafx_2.10-1.0.0-M3.jar" "/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/ext/jfxrt.jar")
+   :runtime-deps nil
+   :test-deps ("/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/jars/scalamock-core_2.10-3.2.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/bundles/scalatest_2.10-2.2.2.jar" "/Users/morgen/.sbt/boot/scala-2.10.4/lib/scala-reflect.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/jars/scalacheck_2.10-1.12.5.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/jars/scalamock-scalatest-support_2.10-3.2.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.5.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar")
+   :doc-jars ("/Users/morgen/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.10.4-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/docs/scalacheck_2.10-1.12.5-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/docs/scalamock-core_2.10-3.2-javadoc.jar" "/Volumes/Source/development/learning/graphics/target/scala-2.10/graphics_2.10-0.1-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/docs/scalamock-scalatest-support_2.10-3.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.10.5-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalafx/scalafx_2.10/docs/scalafx_2.10-1.0.0-M3-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/docs/scalatest_2.10-2.2.2-javadoc.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/docs/test-interface-1.0-javadoc.jar")
+   :reference-source-roots ("/Users/morgen/.ivy2/cache/org.scalafx/scalafx_2.10/srcs/scalafx_2.10-1.0.0-M3-sources.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-core_2.10/srcs/scalamock-core_2.10-3.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scalatest/scalatest_2.10/srcs/scalatest_2.10-2.2.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.5-sources.jar" "/Users/morgen/.ivy2/cache/org.scalamock/scalamock-scalatest-support_2.10/srcs/scalamock-scalatest-support_2.10-3.2-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.10.4-sources.jar" "/Users/morgen/.ivy2/cache/org.scala-sbt/test-interface/srcs/test-interface-1.0-sources.jar" "/Users/morgen/.ivy2/cache/org.scalacheck/scalacheck_2.10/srcs/scalacheck_2.10-1.12.5-sources.jar")))
+ 
+)
