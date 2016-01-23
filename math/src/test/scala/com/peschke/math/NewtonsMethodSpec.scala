@@ -2,7 +2,6 @@ package com.peschke.math
 
 import org.scalatest.WordSpec
 import org.scalatest.Matchers
-import org.scalacheck.Prop
 import org.scalatest.prop.GeneratorDrivenPropertyChecks
 import NewtonsMethodSpec._
 
